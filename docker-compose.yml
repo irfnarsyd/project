@@ -13,9 +13,7 @@ services:
     container_name: go_db
     image: postgres:12
     environment:
-      POSTGRES_PASSWORD: Arsyads698
-      POSTGRES_USER: postgres
-      POSTGRES_DB: postgres
+      DATABASE_URL: ${DATABASE_URL}
     ports:
       - "3131:5432"
     volumes:
